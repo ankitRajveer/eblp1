@@ -1,10 +1,11 @@
-<header class="header">
+<header class="header" [ngClass]="hamburgerClicked ? 'open':''">
+  <div class="overlay" [ngClass]="hamburgerClicked ? 'fade-in':'fade-out'"></div>
   <nav class="flex flex-jc-sb flex-ai-c">
     <a href="/" class="header_logo">
       <img src="assets/images/logo.svg" alt="">
     </a>
 
-    <a href="#" class="header_menu hide-for-desktop">
+    <a href="#" class="header_menu hide-for-desktop" (click)="onMenuClick()">
       <span></span>
       <span></span>
       <span></span>
@@ -17,9 +18,37 @@
       <a href="#">Careers</a>
     </div>
 
-    <a href="#" class="button hide-for-mobile">Request Invite</a>
+    <a href="#" class="header_cta button hide-for-mobile">Request Invite</a>
   </nav>
+  <div class="header_mob_menu hide-for-desktop" [ngClass]="hamburgerClicked ? 'fade-in':'fade-out'">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+    <a href="#">Blog</a>
+    <a href="#">Careers</a>
+  </div>
 </header>
+<p>Next generation digital banking
+
+  Take your financial life online. Your Easybank account will be a one-stop-shop
+  for spending, saving, budgeting, investing, and much more.Next generation digital banking
+
+  Take your financial life online. Your Easybank account will be a one-stop-shop
+  for spending, saving, budgeting, investing, and much more.
+  Next generation digital banking
+
+  Take your financial life online. Your Easybank account will be a one-stop-shop
+  for spending, saving, budgeting, investing, and much more.</p>
+Next generation digital banking
+
+Take your financial life online. Your Easybank account will be a one-stop-shop
+for spending, saving, budgeting, investing, and much more.
+Next generation digital banking
+
+Take your financial life online. Your Easybank account will be a one-stop-shop
+for spending, saving, budgeting, investing, and much more.
+
+
 
 <!-- Home
 About

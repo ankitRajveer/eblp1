@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'eblp1';
+  hamburgerClicked: boolean = false;
+
+  onMenuClick(): void {
+    this.hamburgerClicked = !this.hamburgerClicked;
+  }
 }
