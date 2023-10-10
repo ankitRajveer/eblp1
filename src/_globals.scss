@@ -8,6 +8,16 @@ html{
     box-sizing: inherit;
 }
 
+.container{
+    max-width: 81.125rem;
+    margin:0 auto;
+
+    &--px{
+     padding-left:1rem;
+     padding-right: 1rem;
+    }
+}
+
 body{
     margin:0;
     padding:0;
@@ -37,6 +47,8 @@ body{
 a, a:visited,a:hover{
     text-decoration: none;
     color: $grayishBlue;
+     font-size:$font-sm;
+       
 }
 
 button, .button{
