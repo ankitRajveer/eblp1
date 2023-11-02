@@ -9,12 +9,20 @@ html{
 }
 
 .container{
-    max-width: 81.125rem;
+    // max-width: 81.125rem;
     margin:0 auto;
-
+    
+    &--pall{
+        padding:2.5rem 5rem
+    }
     &--px{
-     padding-left:1rem;
-     padding-right: 1rem;
+     padding-left:2.5rem;
+     padding-right: 2.5rem;
+    }
+
+    &--py {
+        padding-top:5rem;
+        padding-bottom:5rem;
     }
 }
 
